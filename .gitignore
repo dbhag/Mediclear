@@ -1,0 +1,13 @@
+models/
+data/
+__pycache__/
+*.pyc
+.DS_Store
+venv/
+.envmodels/
+data/
+__pycache__/
+*.pyc
+.DS_Store
+venv/
+.env
