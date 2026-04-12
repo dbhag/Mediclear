@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mediclear"
+version = "0.1.0"
+description = "Medical text simplification and health-claim credibility classification"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=0.30.0",
+    "datasets==2.21.0",
+    "pandas>=2.0.0",
+    "sacrebleu>=2.4.0",
+    "scikit-learn>=1.4.0",
+    "sentencepiece>=0.2.0",
+    "streamlit>=1.34.0",
+    "torch>=2.2.0",
+    "transformers>=4.41.0",
+]
+
+[project.optional-dependencies]
+eval = [
+    "easse>=0.2.4",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
