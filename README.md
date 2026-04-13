@@ -59,6 +59,7 @@ python -m mediclear.cli.prepare_data
 You can also prepare only one dataset:
 
 python -m mediclear.cli.prepare_data --only simplification
+
 python -m mediclear.cli.prepare_data --only health_fact
 
 
@@ -93,6 +94,7 @@ Open Terminalin the project folder.
 ### 1. Create and activate a virtual environment
 
 python3 -m venv .venv
+
 source .venv/bin/activate
 
 
@@ -120,12 +122,14 @@ python -m mediclear.cli.prepare_data
 Or run a single preparation step:
 
 python -m mediclear.cli.prepare_data --only simplification
+
 python -m mediclear.cli.prepare_data --only health_fact
 
 
 ### 5. Train the models
 
 python -m train_simplifier
+
 python -m mediclear.cli.train_credibility_classifier
 
 
