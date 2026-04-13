@@ -66,7 +66,7 @@ python -m mediclear.cli.prepare_data --only health_fact
 
 Train the simplifier:
 
-python -m mediclear.cli.train_simplifier
+python -m train_simplifier
 
 Train the credibility classifier:
 
@@ -125,7 +125,7 @@ python -m mediclear.cli.prepare_data --only health_fact
 
 ### 5. Train the models
 
-python -m mediclear.cli.train_simplifier
+python -m train_simplifier
 python -m mediclear.cli.train_credibility_classifier
 
 
