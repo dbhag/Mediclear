@@ -212,3 +212,35 @@ python -m streamlit run app/streamlit_app.py
 
 pip install easse
 
+
+### Issues with installing easse
+
+Option 1: use a dedicated Python 3.7 environment for EASSE
+
+If you use pyenv on macOS:
+
+brew install pyenv
+
+pyenv install 3.7.17
+
+pyenv local 3.7.17
+
+python -m venv .venv-easse
+
+source .venv-easse/bin/activate
+
+python -m pip install --upgrade pip
+
+pip install easse
+
+Option 2: install EASSE from source
+
+The official EASSE README also supports installing from source:
+
+git clone https://github.com/feralvam/easse.git
+
+cd easse
+
+pip install -e .
+
+
